@@ -31,7 +31,7 @@ RUN curl -o /usr/local/bin/gosu -fSL https://github.com/tianon/gosu/releases/dow
   && chmod +x /usr/local/bin/gosu
 
 ENV BITCOIN_ABC_VERSION=0.19.11
-ENV BITCOIN_ABC_SHASUM="25f45606e37db610e2052106c070b602a8cec051bcfacf85b842b1d0c8bdc4e6  bitcoin-abc-${BITCOIN_ABC_VERSION}-x86_64-linux-gnu.tar.gz"
+ENV BITCOIN_ABC_SHASUM="02ee61bd4d1babfe0a1e219dedd9d2a338cefb2e7334b69a5c2abf247381b263 bitcoin-abc-${BITCOIN_ABC_VERSION}-x86_64-linux-gnu.tar.gz"
 ENV BITCOIN_ABC_PREFIX=/opt/bitcoin-abc-${BITCOIN_ABC_VERSION}
 ENV BITCOIN_ABC_DATA=/home/bitcoin/.bitcoin
 ENV PATH=/opt/bitcoin-abc-${BITCOIN_ABC_VERSION}/bin:$PATH
