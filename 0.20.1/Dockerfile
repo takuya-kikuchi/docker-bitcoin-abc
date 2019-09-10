@@ -43,8 +43,6 @@ RUN curl -SLO https://download.bitcoinabc.org/${BITCOIN_ABC_VERSION}/linux/bitco
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
-RUN chmod u+x /entrypoint.sh
-
 VOLUME ["/home/bitcoin/.bitcoin"]
 
 EXPOSE 8332 8333 18332 18333 18444
